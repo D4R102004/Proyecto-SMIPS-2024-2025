@@ -204,6 +204,7 @@ class TestSuite:
 
     def run_all(self) -> None:
         for test in self.test:
+            print(f"Ejecutando test: {test.test_name}")  # Agregar este print
             test.run("logisim", self.circ, self.template)
             self.failed |= test.failed
             test.print()
