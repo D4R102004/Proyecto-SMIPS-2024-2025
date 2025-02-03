@@ -400,98 +400,63 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(650,640)" to="(660,640)"/>
     <wire from="(540,1010)" to="(550,1010)"/>
     <wire from="(620,1010)" to="(630,1010)"/>
-    <comp lib="0" loc="(430,640)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="Write RAM"/>
+    <comp lib="1" loc="(250,760)" name="OR Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
     </comp>
-    <comp lib="0" loc="(230,530)" name="Tunnel">
-      <a name="label" val="Clock"/>
+    <comp lib="0" loc="(1310,270)" name="Tunnel"/>
+    <comp lib="0" loc="(660,1240)" name="Tunnel">
+      <a name="label" val="RAM"/>
     </comp>
-    <comp lib="6" loc="(1003,1150)" name="Text">
-      <a name="text" val="Fetch Progress"/>
-      <a name="font" val="SansSerif bold 20"/>
-    </comp>
-    <comp lib="0" loc="(1230,1060)" name="Tunnel">
-      <a name="facing" val="north"/>
-      <a name="label" val="Halt"/>
-    </comp>
-    <comp lib="0" loc="(400,1420)" name="Tunnel">
-      <a name="facing" val="north"/>
-      <a name="label" val="Reset"/>
-    </comp>
-    <comp lib="4" loc="(680,1350)" name="D Flip-Flop"/>
-    <comp lib="6" loc="(225,199)" name="Text">
-      <a name="text" val="Iddle"/>
-      <a name="font" val="SansSerif bold 14"/>
-    </comp>
-    <comp lib="6" loc="(259,619)" name="Text">
-      <a name="text" val="Outputs"/>
-      <a name="font" val="SansSerif bold 20"/>
-    </comp>
-    <comp lib="0" loc="(510,570)" name="Pin">
-      <a name="width" val="4"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="Write Time"/>
+    <comp lib="0" loc="(650,640)" name="Pin">
+      <a name="output" val="true"/>
+      <a name="label" val="E_PC"/>
       <a name="labelloc" val="north"/>
       <a name="labelfont" val="SansSerif bold 12"/>
     </comp>
-    <comp lib="0" loc="(1730,1070)" name="Tunnel">
-      <a name="facing" val="north"/>
-      <a name="label" val="End"/>
+    <comp lib="0" loc="(800,640)" name="Pin">
+      <a name="output" val="true"/>
+      <a name="label" val="END"/>
+      <a name="labelloc" val="north"/>
+      <a name="labelfont" val="SansSerif bold 12"/>
     </comp>
-    <comp lib="0" loc="(170,690)" name="Tunnel">
+    <comp lib="0" loc="(310,960)" name="Tunnel">
+      <a name="label" val="Idle Finished"/>
+    </comp>
+    <comp lib="0" loc="(360,1030)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="Initial Chrono Reset"/>
+    </comp>
+    <comp lib="0" loc="(560,1220)" name="Tunnel">
       <a name="facing" val="east"/>
-      <a name="label" val="Execute Finished"/>
+      <a name="label" val="Write RAM"/>
     </comp>
     <comp lib="6" loc="(705,919)" name="Text">
       <a name="text" val="Fetch"/>
       <a name="font" val="SansSerif bold 20"/>
     </comp>
-    <comp lib="1" loc="(1560,1020)" name="OR Gate">
-      <a name="size" val="30"/>
-      <a name="inputs" val="2"/>
+    <comp lib="0" loc="(710,1350)" name="Tunnel">
+      <a name="label" val="R/W Done"/>
     </comp>
-    <comp lib="0" loc="(180,380)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="Halt Instruction"/>
-    </comp>
-    <comp lib="0" loc="(440,750)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="Chrono1 Reset"/>
-    </comp>
-    <comp lib="0" loc="(170,740)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="Fetch"/>
-    </comp>
-    <comp lib="4" loc="(680,1020)" name="D Flip-Flop"/>
-    <comp lib="0" loc="(1090,1380)" name="Tunnel">
-      <a name="facing" val="north"/>
-      <a name="label" val="Chrono1 Reset"/>
-    </comp>
-    <comp lib="0" loc="(560,1260)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="Read RAM"/>
-    </comp>
-    <comp lib="1" loc="(250,670)" name="OR Gate">
-      <a name="size" val="30"/>
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="0" loc="(230,570)" name="Tunnel">
-      <a name="label" val="Reset"/>
-    </comp>
-    <comp lib="0" loc="(280,760)" name="Tunnel">
-      <a name="label" val="CS"/>
-    </comp>
-    <comp lib="0" loc="(550,570)" name="Tunnel">
-      <a name="width" val="4"/>
-      <a name="label" val="Write Time"/>
-    </comp>
-    <comp lib="0" loc="(800,730)" name="Pin">
-      <a name="output" val="true"/>
-      <a name="label" val="PC_ADDRESS"/>
+    <comp lib="0" loc="(180,570)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="RST"/>
       <a name="labelloc" val="north"/>
       <a name="labelfont" val="SansSerif bold 12"/>
     </comp>
+    <comp lib="0" loc="(1010,1060)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="Fecth Finished "/>
+    </comp>
+    <comp lib="6" loc="(1003,1150)" name="Text">
+      <a name="text" val="Fetch Progress"/>
+      <a name="font" val="SansSerif bold 20"/>
+    </comp>
+    <comp lib="0" loc="(170,690)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="Execute Finished"/>
+    </comp>
+    <comp lib="0" loc="(1430,300)" name="Tunnel"/>
     <comp lib="0" loc="(510,530)" name="Pin">
       <a name="width" val="4"/>
       <a name="tristate" val="false"/>
@@ -499,9 +464,112 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="labelloc" val="north"/>
       <a name="labelfont" val="SansSerif bold 12"/>
     </comp>
-    <comp lib="0" loc="(180,320)" name="Tunnel">
+    <comp lib="0" loc="(310,1580)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="Chrono2 Reset"/>
+    </comp>
+    <comp lib="0" loc="(180,1240)" name="Tunnel">
       <a name="facing" val="east"/>
-      <a name="label" val="Captured "/>
+      <a name="label" val="Execute In Progress"/>
+    </comp>
+    <comp lib="0" loc="(540,1010)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="Chrono1 Reset"/>
+    </comp>
+    <comp lib="0" loc="(230,530)" name="Tunnel">
+      <a name="label" val="Clock"/>
+    </comp>
+    <comp lib="6" loc="(1439,283)" name="Text">
+      <a name="text" val="CS"/>
+    </comp>
+    <comp lib="0" loc="(1660,1070)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="Reset"/>
+    </comp>
+    <comp lib="0" loc="(520,750)" name="Tunnel">
+      <a name="label" val="PC_Address"/>
+    </comp>
+    <comp lib="0" loc="(310,1260)" name="Tunnel">
+      <a name="label" val="R/W Execution"/>
+    </comp>
+    <comp lib="0" loc="(670,780)" name="Tunnel">
+      <a name="label" val="R/W RAM"/>
+      <a name="labelfont" val="SansSerif bold 12"/>
+    </comp>
+    <comp lib="0" loc="(460,1380)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="Execute"/>
+    </comp>
+    <comp lib="1" loc="(290,1380)" name="OR Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="1" loc="(610,1040)" name="OR Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="3"/>
+    </comp>
+    <comp lib="1" loc="(1030,1310)" name="OR Gate">
+      <a name="facing" val="north"/>
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="0" loc="(1010,990)" name="Tunnel">
+      <a name="facing" val="south"/>
+      <a name="label" val="Enable Instruction"/>
+    </comp>
+    <comp lib="0" loc="(270,670)" name="Tunnel">
+      <a name="label" val="Enable_PC"/>
+    </comp>
+    <comp lib="0" loc="(620,1010)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="Clock"/>
+    </comp>
+    <comp lib="0" loc="(350,1350)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="Clock"/>
+    </comp>
+    <comp lib="0" loc="(420,680)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="Execute"/>
+    </comp>
+    <comp lib="0" loc="(440,750)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="Chrono1 Reset"/>
+    </comp>
+    <comp lib="0" loc="(280,760)" name="Tunnel">
+      <a name="label" val="CS"/>
+    </comp>
+    <comp lib="6" loc="(1315,252)" name="Text">
+      <a name="text" val="Captura Instruccion"/>
+    </comp>
+    <comp lib="0" loc="(1600,990)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="Clock"/>
+    </comp>
+    <comp lib="0" loc="(1730,1070)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="End"/>
+    </comp>
+    <comp lib="6" loc="(1384,173)" name="Text">
+      <a name="text" val="End"/>
+    </comp>
+    <comp lib="0" loc="(870,980)" name="Tunnel">
+      <a name="label" val="R/W Done"/>
+    </comp>
+    <comp lib="0" loc="(1310,330)" name="Tunnel"/>
+    <comp loc="(270,1520)" name="Chronometer"/>
+    <comp lib="0" loc="(830,950)" name="Tunnel">
+      <a name="label" val="Execute Finished"/>
+    </comp>
+    <comp lib="6" loc="(225,199)" name="Text">
+      <a name="text" val="Iddle"/>
+      <a name="font" val="SansSerif bold 14"/>
+    </comp>
+    <comp lib="1" loc="(460,190)" name="OR Gate"/>
+    <comp loc="(1000,1260)" name="Chronometer"/>
+    <comp lib="0" loc="(170,740)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="Fetch"/>
     </comp>
     <comp lib="0" loc="(800,780)" name="Pin">
       <a name="output" val="true"/>
@@ -509,48 +577,18 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="labelloc" val="north"/>
       <a name="labelfont" val="SansSerif bold 12"/>
     </comp>
-    <comp lib="0" loc="(660,640)" name="Tunnel">
-      <a name="label" val="Enable_PC"/>
-      <a name="labelfont" val="SansSerif bold 12"/>
-    </comp>
-    <comp lib="0" loc="(620,1010)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="Clock"/>
-    </comp>
-    <comp lib="0" loc="(180,780)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="Execute"/>
-    </comp>
-    <comp lib="0" loc="(870,980)" name="Tunnel">
-      <a name="label" val="R/W Done"/>
-    </comp>
-    <comp lib="6" loc="(1439,283)" name="Text">
-      <a name="text" val="CS"/>
-    </comp>
-    <comp lib="0" loc="(180,1240)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="Execute In Progress"/>
-    </comp>
-    <comp lib="6" loc="(782,72)" name="Text">
-      <a name="text" val="Esquema de guia"/>
-      <a name="font" val="SansSerif bold 20"/>
-    </comp>
-    <comp lib="0" loc="(260,1050)" name="Tunnel">
+    <comp lib="0" loc="(670,1420)" name="Tunnel">
       <a name="facing" val="north"/>
       <a name="label" val="Reset"/>
     </comp>
-    <comp lib="6" loc="(1617,920)" name="Text">
-      <a name="text" val="End"/>
-      <a name="font" val="SansSerif bold 20"/>
+    <comp lib="0" loc="(1070,1260)" name="Tunnel">
+      <a name="label" val="Fetched"/>
     </comp>
-    <comp lib="4" loc="(410,1360)" name="D Flip-Flop"/>
-    <comp lib="0" loc="(1120,980)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="Clock"/>
+    <comp lib="0" loc="(830,1030)" name="Tunnel">
+      <a name="label" val="Fecth Finished "/>
     </comp>
-    <comp lib="0" loc="(1660,1070)" name="Tunnel">
-      <a name="facing" val="north"/>
-      <a name="label" val="Reset"/>
+    <comp lib="6" loc="(1314,311)" name="Text">
+      <a name="text" val="Ejecuta Instruccion "/>
     </comp>
     <comp lib="0" loc="(830,780)" name="Tunnel">
       <a name="label" val="Enable Instruction"/>
@@ -559,21 +597,67 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <comp lib="6" loc="(594,196)" name="Text">
       <a name="text" val="Capturar Instruccion"/>
     </comp>
-    <comp lib="6" loc="(247,919)" name="Text">
-      <a name="text" val="Idle"/>
-      <a name="font" val="SansSerif bold 20"/>
-    </comp>
-    <comp lib="0" loc="(1510,1080)" name="Tunnel">
+    <comp lib="2" loc="(1170,170)" name="Demultiplexer"/>
+    <comp lib="0" loc="(180,380)" name="Tunnel">
       <a name="facing" val="east"/>
+      <a name="label" val="Halt Instruction"/>
+    </comp>
+    <comp lib="0" loc="(1230,1060)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="Halt"/>
+    </comp>
+    <comp lib="0" loc="(1280,980)" name="Tunnel">
+      <a name="label" val="Execute In Progress"/>
+    </comp>
+    <comp lib="0" loc="(1320,1060)" name="Tunnel">
+      <a name="facing" val="north"/>
       <a name="label" val="Halt State"/>
     </comp>
-    <comp lib="6" loc="(1314,311)" name="Text">
-      <a name="text" val="Ejecuta Instruccion "/>
+    <comp lib="0" loc="(180,430)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="Executed"/>
     </comp>
-    <comp loc="(1000,1260)" name="Chronometer"/>
-    <comp lib="0" loc="(620,1340)" name="Tunnel">
+    <comp lib="6" loc="(1175,918)" name="Text">
+      <a name="text" val="Execute"/>
+      <a name="font" val="SansSerif bold 20"/>
+    </comp>
+    <comp lib="2" loc="(750,1020)" name="Demultiplexer">
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="0" loc="(870,680)" name="Tunnel">
+      <a name="label" val="Read End"/>
+      <a name="labelfont" val="SansSerif bold 12"/>
+    </comp>
+    <comp lib="0" loc="(150,980)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="Clock"/>
+    </comp>
+    <comp lib="0" loc="(850,730)" name="Tunnel">
+      <a name="label" val="PC_Address"/>
+      <a name="labelfont" val="SansSerif bold 12"/>
+    </comp>
+    <comp lib="0" loc="(570,1380)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="Read End"/>
+    </comp>
+    <comp lib="1" loc="(1420,300)" name="OR Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="0" loc="(550,530)" name="Tunnel">
+      <a name="width" val="4"/>
+      <a name="label" val="Read Time"/>
+    </comp>
+    <comp lib="0" loc="(180,270)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="Start"/>
+    </comp>
+    <comp lib="6" loc="(782,72)" name="Text">
+      <a name="text" val="Esquema de guia"/>
+      <a name="font" val="SansSerif bold 20"/>
+    </comp>
+    <comp lib="2" loc="(190,1500)" name="Multiplexer">
+      <a name="width" val="4"/>
+      <a name="enable" val="false"/>
     </comp>
     <comp lib="0" loc="(340,570)" name="Pin">
       <a name="tristate" val="false"/>
@@ -581,80 +665,22 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="labelloc" val="north"/>
       <a name="labelfont" val="SansSerif bold 12"/>
     </comp>
-    <comp lib="0" loc="(310,960)" name="Tunnel">
-      <a name="label" val="Idle Finished"/>
+    <comp lib="0" loc="(550,570)" name="Tunnel">
+      <a name="width" val="4"/>
+      <a name="label" val="Write Time"/>
     </comp>
-    <comp lib="0" loc="(240,1580)" name="Tunnel">
+    <comp lib="0" loc="(930,1350)" name="Tunnel">
       <a name="facing" val="north"/>
       <a name="label" val="Clock"/>
     </comp>
-    <comp lib="0" loc="(170,1560)" name="Tunnel">
-      <a name="facing" val="north"/>
-      <a name="label" val="Write RAM"/>
+    <comp lib="4" loc="(680,1350)" name="D Flip-Flop"/>
+    <comp lib="6" loc="(240,1161)" name="Text">
+      <a name="text" val="Execution Progress"/>
+      <a name="font" val="SansSerif bold 20"/>
     </comp>
-    <comp lib="0" loc="(1320,1060)" name="Tunnel">
-      <a name="facing" val="north"/>
-      <a name="label" val="Halt State"/>
-    </comp>
-    <comp lib="2" loc="(710,170)" name="Demultiplexer">
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="0" loc="(800,680)" name="Pin">
-      <a name="output" val="true"/>
-      <a name="label" val="Read_RAM"/>
-      <a name="labelloc" val="north"/>
-      <a name="labelfont" val="SansSerif bold 12"/>
-    </comp>
-    <comp lib="0" loc="(180,270)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="Start"/>
-    </comp>
-    <comp lib="1" loc="(460,190)" name="OR Gate"/>
-    <comp lib="0" loc="(460,1380)" name="Tunnel">
-      <a name="facing" val="north"/>
-      <a name="label" val="Execute"/>
-    </comp>
-    <comp lib="2" loc="(1170,170)" name="Demultiplexer"/>
-    <comp lib="2" loc="(230,1240)" name="Demultiplexer">
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="0" loc="(1170,1060)" name="Tunnel">
-      <a name="facing" val="north"/>
-      <a name="label" val="Reset"/>
-    </comp>
-    <comp lib="0" loc="(520,750)" name="Tunnel">
-      <a name="label" val="PC_Address"/>
-    </comp>
-    <comp lib="0" loc="(130,650)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="R/W Done"/>
-    </comp>
-    <comp lib="2" loc="(800,180)" name="Demultiplexer">
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="4" loc="(1180,990)" name="D Flip-Flop"/>
-    <comp lib="2" loc="(500,1360)" name="Demultiplexer">
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="0" loc="(190,1420)" name="Tunnel">
-      <a name="facing" val="north"/>
-      <a name="label" val="Chrono2 Reset"/>
-    </comp>
-    <comp lib="1" loc="(1030,1310)" name="OR Gate">
-      <a name="facing" val="north"/>
-      <a name="size" val="30"/>
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="0" loc="(830,1030)" name="Tunnel">
-      <a name="label" val="Fecth Finished "/>
-    </comp>
-    <comp lib="0" loc="(360,1030)" name="Tunnel">
-      <a name="facing" val="north"/>
-      <a name="label" val="Initial Chrono Reset"/>
-    </comp>
-    <comp lib="1" loc="(510,750)" name="OR Gate">
-      <a name="size" val="30"/>
-      <a name="inputs" val="3"/>
+    <comp lib="6" loc="(259,619)" name="Text">
+      <a name="text" val="Outputs"/>
+      <a name="font" val="SansSerif bold 20"/>
     </comp>
     <comp lib="0" loc="(650,780)" name="Pin">
       <a name="output" val="true"/>
@@ -662,13 +688,80 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="labelloc" val="north"/>
       <a name="labelfont" val="SansSerif bold 12"/>
     </comp>
-    <comp lib="0" loc="(130,1530)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="4"/>
-      <a name="label" val="Write Time"/>
+    <comp lib="0" loc="(340,530)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="READ_RAM"/>
+      <a name="labelloc" val="north"/>
+      <a name="labelfont" val="SansSerif bold 12"/>
     </comp>
-    <comp lib="0" loc="(670,780)" name="Tunnel">
+    <comp lib="1" loc="(940,150)" name="OR Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="4" loc="(210,1000)" name="D Flip-Flop"/>
+    <comp lib="2" loc="(240,1000)" name="Demultiplexer">
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="0" loc="(650,710)" name="Pin">
+      <a name="output" val="true"/>
+      <a name="label" val="CS"/>
+      <a name="labelloc" val="north"/>
+      <a name="labelfont" val="SansSerif bold 12"/>
+    </comp>
+    <comp lib="0" loc="(710,530)" name="Tunnel">
+      <a name="label" val="Halt"/>
+    </comp>
+    <comp lib="0" loc="(180,780)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="Execute"/>
+    </comp>
+    <comp lib="4" loc="(1180,990)" name="D Flip-Flop"/>
+    <comp lib="0" loc="(650,1070)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="Reset"/>
+    </comp>
+    <comp lib="4" loc="(410,1360)" name="D Flip-Flop"/>
+    <comp lib="0" loc="(260,1050)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="Reset"/>
+    </comp>
+    <comp lib="0" loc="(510,570)" name="Pin">
+      <a name="width" val="4"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="Write Time"/>
+      <a name="labelloc" val="north"/>
+      <a name="labelfont" val="SansSerif bold 12"/>
+    </comp>
+    <comp lib="1" loc="(250,670)" name="OR Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="0" loc="(190,1420)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="Chrono2 Reset"/>
+    </comp>
+    <comp lib="2" loc="(500,1360)" name="Demultiplexer">
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="0" loc="(530,660)" name="Tunnel">
       <a name="label" val="R/W RAM"/>
+    </comp>
+    <comp lib="0" loc="(970,1380)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="Initial Chrono Reset"/>
+    </comp>
+    <comp lib="0" loc="(370,530)" name="Tunnel">
+      <a name="label" val="Read RAM"/>
+    </comp>
+    <comp lib="0" loc="(800,730)" name="Pin">
+      <a name="output" val="true"/>
+      <a name="label" val="PC_ADDRESS"/>
+      <a name="labelloc" val="north"/>
+      <a name="labelfont" val="SansSerif bold 12"/>
+    </comp>
+    <comp lib="0" loc="(670,530)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="HALT"/>
+      <a name="labelloc" val="north"/>
       <a name="labelfont" val="SansSerif bold 12"/>
     </comp>
     <comp lib="0" loc="(180,530)" name="Pin">
@@ -677,269 +770,176 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="labelloc" val="north"/>
       <a name="labelfont" val="SansSerif bold 12"/>
     </comp>
-    <comp lib="0" loc="(660,1240)" name="Tunnel">
-      <a name="label" val="RAM"/>
+    <comp lib="0" loc="(170,1560)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="Write RAM"/>
     </comp>
-    <comp lib="0" loc="(710,710)" name="Tunnel">
-      <a name="label" val="CS"/>
-      <a name="labelfont" val="SansSerif bold 12"/>
+    <comp lib="0" loc="(370,570)" name="Tunnel">
+      <a name="label" val="Write RAM"/>
     </comp>
-    <comp lib="0" loc="(310,1260)" name="Tunnel">
+    <comp lib="0" loc="(150,1390)" name="Tunnel">
+      <a name="facing" val="east"/>
       <a name="label" val="R/W Execution"/>
     </comp>
-    <comp lib="1" loc="(630,1240)" name="OR Gate">
+    <comp lib="1" loc="(1560,1020)" name="OR Gate">
       <a name="size" val="30"/>
       <a name="inputs" val="2"/>
     </comp>
-    <comp lib="0" loc="(310,1580)" name="Tunnel">
-      <a name="facing" val="north"/>
-      <a name="label" val="Chrono2 Reset"/>
-    </comp>
-    <comp lib="4" loc="(1670,1000)" name="D Flip-Flop"/>
-    <comp lib="1" loc="(290,1380)" name="OR Gate">
-      <a name="size" val="30"/>
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="0" loc="(1310,270)" name="Tunnel"/>
-    <comp lib="1" loc="(250,760)" name="OR Gate">
-      <a name="size" val="30"/>
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="0" loc="(850,730)" name="Tunnel">
-      <a name="label" val="PC_Address"/>
-      <a name="labelfont" val="SansSerif bold 12"/>
-    </comp>
-    <comp lib="6" loc="(1017,162)" name="Text">
-      <a name="text" val="Execute"/>
-    </comp>
-    <comp lib="0" loc="(570,1380)" name="Tunnel">
-      <a name="facing" val="north"/>
-      <a name="label" val="Read End"/>
-    </comp>
-    <comp lib="2" loc="(750,1020)" name="Demultiplexer">
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="0" loc="(400,720)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="Fetch"/>
-    </comp>
-    <comp lib="0" loc="(870,680)" name="Tunnel">
-      <a name="label" val="Read End"/>
-      <a name="labelfont" val="SansSerif bold 12"/>
-    </comp>
-    <comp lib="0" loc="(530,660)" name="Tunnel">
-      <a name="label" val="R/W RAM"/>
-    </comp>
-    <comp lib="6" loc="(1175,918)" name="Text">
-      <a name="text" val="Execute"/>
-      <a name="font" val="SansSerif bold 20"/>
-    </comp>
-    <comp lib="0" loc="(930,1350)" name="Tunnel">
+    <comp lib="0" loc="(240,1580)" name="Tunnel">
       <a name="facing" val="north"/>
       <a name="label" val="Clock"/>
-    </comp>
-    <comp lib="6" loc="(1315,252)" name="Text">
-      <a name="text" val="Captura Instruccion"/>
-    </comp>
-    <comp lib="0" loc="(1430,300)" name="Tunnel"/>
-    <comp lib="0" loc="(370,530)" name="Tunnel">
-      <a name="label" val="Read RAM"/>
-    </comp>
-    <comp lib="0" loc="(1070,1260)" name="Tunnel">
-      <a name="label" val="Fetched"/>
-    </comp>
-    <comp lib="6" loc="(1384,173)" name="Text">
-      <a name="text" val="End"/>
-    </comp>
-    <comp lib="0" loc="(710,1350)" name="Tunnel">
-      <a name="label" val="R/W Done"/>
-    </comp>
-    <comp lib="0" loc="(150,980)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="Clock"/>
-    </comp>
-    <comp loc="(270,1520)" name="Chronometer"/>
-    <comp lib="0" loc="(830,950)" name="Tunnel">
-      <a name="label" val="Execute Finished"/>
-    </comp>
-    <comp lib="6" loc="(245,505)" name="Text">
-      <a name="text" val="Inputs"/>
-      <a name="font" val="SansSerif bold 20"/>
     </comp>
     <comp lib="0" loc="(770,1070)" name="Tunnel">
       <a name="facing" val="north"/>
       <a name="label" val="Fetched"/>
     </comp>
-    <comp lib="0" loc="(650,710)" name="Pin">
-      <a name="output" val="true"/>
-      <a name="label" val="CS"/>
-      <a name="labelloc" val="north"/>
-      <a name="labelfont" val="SansSerif bold 12"/>
-    </comp>
-    <comp lib="0" loc="(180,430)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="Executed"/>
-    </comp>
-    <comp lib="0" loc="(550,530)" name="Tunnel">
-      <a name="width" val="4"/>
-      <a name="label" val="Read Time"/>
-    </comp>
-    <comp lib="0" loc="(1010,990)" name="Tunnel">
-      <a name="facing" val="south"/>
-      <a name="label" val="Enable Instruction"/>
-    </comp>
-    <comp lib="0" loc="(540,1010)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="Chrono1 Reset"/>
-    </comp>
-    <comp lib="0" loc="(340,530)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="READ_RAM"/>
-      <a name="labelloc" val="north"/>
-      <a name="labelfont" val="SansSerif bold 12"/>
-    </comp>
-    <comp lib="0" loc="(670,1420)" name="Tunnel">
-      <a name="facing" val="north"/>
-      <a name="label" val="Reset"/>
-    </comp>
-    <comp lib="0" loc="(270,670)" name="Tunnel">
-      <a name="label" val="Enable_PC"/>
-    </comp>
-    <comp lib="0" loc="(420,680)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="Execute"/>
-    </comp>
-    <comp lib="4" loc="(210,1000)" name="D Flip-Flop"/>
-    <comp lib="1" loc="(770,960)" name="OR Gate">
-      <a name="facing" val="west"/>
-      <a name="size" val="30"/>
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="0" loc="(550,1070)" name="Tunnel">
-      <a name="facing" val="north"/>
-      <a name="label" val="Idle Finished"/>
-    </comp>
-    <comp lib="0" loc="(970,1380)" name="Tunnel">
-      <a name="facing" val="north"/>
-      <a name="label" val="Initial Chrono Reset"/>
-    </comp>
-    <comp lib="1" loc="(1420,300)" name="OR Gate">
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="0" loc="(350,1350)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="Clock"/>
-    </comp>
-    <comp lib="0" loc="(650,640)" name="Pin">
-      <a name="output" val="true"/>
-      <a name="label" val="E_PC"/>
-      <a name="labelloc" val="north"/>
-      <a name="labelfont" val="SansSerif bold 12"/>
-    </comp>
-    <comp lib="1" loc="(940,150)" name="OR Gate">
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="0" loc="(800,640)" name="Pin">
-      <a name="output" val="true"/>
-      <a name="label" val="END"/>
-      <a name="labelloc" val="north"/>
-      <a name="labelfont" val="SansSerif bold 12"/>
-    </comp>
-    <comp lib="0" loc="(1310,330)" name="Tunnel"/>
-    <comp lib="0" loc="(250,1270)" name="Tunnel">
-      <a name="facing" val="north"/>
-      <a name="label" val="RAM"/>
-    </comp>
-    <comp lib="2" loc="(1210,990)" name="Demultiplexer">
+    <comp lib="2" loc="(710,170)" name="Demultiplexer">
       <a name="enable" val="false"/>
-    </comp>
-    <comp lib="0" loc="(1010,1060)" name="Tunnel">
-      <a name="facing" val="north"/>
-      <a name="label" val="Fecth Finished "/>
-    </comp>
-    <comp lib="0" loc="(1600,990)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="Clock"/>
-    </comp>
-    <comp lib="6" loc="(240,1161)" name="Text">
-      <a name="text" val="Execution Progress"/>
-      <a name="font" val="SansSerif bold 20"/>
-    </comp>
-    <comp lib="2" loc="(190,1500)" name="Multiplexer">
-      <a name="width" val="4"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="0" loc="(560,1220)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="Write RAM"/>
-    </comp>
-    <comp lib="0" loc="(900,640)" name="Tunnel">
-      <a name="label" val="End"/>
-      <a name="labelfont" val="SansSerif bold 12"/>
-    </comp>
-    <comp lib="0" loc="(1280,980)" name="Tunnel">
-      <a name="label" val="Execute In Progress"/>
-    </comp>
-    <comp lib="2" loc="(240,1000)" name="Demultiplexer">
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="0" loc="(710,1070)" name="Tunnel">
-      <a name="facing" val="north"/>
-      <a name="label" val="Fetch"/>
-    </comp>
-    <comp lib="0" loc="(670,530)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="HALT"/>
-      <a name="labelloc" val="north"/>
-      <a name="labelfont" val="SansSerif bold 12"/>
-    </comp>
-    <comp lib="0" loc="(710,530)" name="Tunnel">
-      <a name="label" val="Halt"/>
-    </comp>
-    <comp lib="0" loc="(310,1230)" name="Tunnel">
-      <a name="label" val="Execute Finished"/>
     </comp>
     <comp lib="0" loc="(130,1470)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="width" val="4"/>
       <a name="label" val="Read Time"/>
     </comp>
-    <comp lib="0" loc="(150,1390)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="R/W Execution"/>
+    <comp lib="2" loc="(800,180)" name="Demultiplexer">
+      <a name="enable" val="false"/>
     </comp>
-    <comp lib="0" loc="(650,1070)" name="Tunnel">
-      <a name="facing" val="north"/>
-      <a name="label" val="Reset"/>
-    </comp>
-    <comp lib="0" loc="(180,570)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="RST"/>
-      <a name="labelloc" val="north"/>
-      <a name="labelfont" val="SansSerif bold 12"/>
-    </comp>
-    <comp lib="1" loc="(500,660)" name="OR Gate">
+    <comp lib="1" loc="(500,660)" name="AND Gate">
       <a name="size" val="30"/>
       <a name="inputs" val="2"/>
     </comp>
-    <comp lib="0" loc="(370,570)" name="Tunnel">
-      <a name="label" val="Write RAM"/>
+    <comp lib="1" loc="(510,750)" name="OR Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="3"/>
     </comp>
-    <comp lib="2" loc="(280,190)" name="Demultiplexer">
-      <a name="enable" val="false"/>
+    <comp lib="1" loc="(770,960)" name="OR Gate">
+      <a name="facing" val="west"/>
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
     </comp>
-    <comp lib="0" loc="(430,780)" name="Tunnel">
+    <comp lib="0" loc="(1510,1080)" name="Tunnel">
       <a name="facing" val="east"/>
-      <a name="label" val="Enable_PC"/>
+      <a name="label" val="Halt State"/>
+    </comp>
+    <comp lib="0" loc="(400,720)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="Fetch"/>
     </comp>
     <comp lib="0" loc="(920,1240)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="width" val="4"/>
       <a name="label" val="Read Time"/>
     </comp>
-    <comp lib="1" loc="(610,1040)" name="OR Gate">
+    <comp lib="4" loc="(1670,1000)" name="D Flip-Flop"/>
+    <comp lib="0" loc="(430,780)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="Enable_PC"/>
+    </comp>
+    <comp lib="0" loc="(1090,1380)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="Chrono1 Reset"/>
+    </comp>
+    <comp lib="6" loc="(1017,162)" name="Text">
+      <a name="text" val="Execute"/>
+    </comp>
+    <comp lib="0" loc="(710,1070)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="Fetch"/>
+    </comp>
+    <comp lib="4" loc="(680,1020)" name="D Flip-Flop"/>
+    <comp lib="6" loc="(247,919)" name="Text">
+      <a name="text" val="Idle"/>
+      <a name="font" val="SansSerif bold 20"/>
+    </comp>
+    <comp lib="0" loc="(180,320)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="Captured "/>
+    </comp>
+    <comp lib="2" loc="(1210,990)" name="Demultiplexer">
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="1" loc="(630,1240)" name="OR Gate">
       <a name="size" val="30"/>
-      <a name="inputs" val="3"/>
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="0" loc="(900,640)" name="Tunnel">
+      <a name="label" val="End"/>
+      <a name="labelfont" val="SansSerif bold 12"/>
+    </comp>
+    <comp lib="0" loc="(620,1340)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="Clock"/>
+    </comp>
+    <comp lib="0" loc="(550,1070)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="Idle Finished"/>
+    </comp>
+    <comp lib="0" loc="(710,710)" name="Tunnel">
+      <a name="label" val="CS"/>
+      <a name="labelfont" val="SansSerif bold 12"/>
+    </comp>
+    <comp lib="0" loc="(310,1230)" name="Tunnel">
+      <a name="label" val="Execute Finished"/>
+    </comp>
+    <comp lib="0" loc="(400,1420)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="Reset"/>
+    </comp>
+    <comp lib="0" loc="(250,1270)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="RAM"/>
+    </comp>
+    <comp lib="0" loc="(430,640)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="Write RAM"/>
+    </comp>
+    <comp lib="2" loc="(230,1240)" name="Demultiplexer">
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="0" loc="(230,570)" name="Tunnel">
+      <a name="label" val="Reset"/>
+    </comp>
+    <comp lib="0" loc="(1120,980)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="Clock"/>
+    </comp>
+    <comp lib="0" loc="(130,1530)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="4"/>
+      <a name="label" val="Write Time"/>
+    </comp>
+    <comp lib="6" loc="(245,505)" name="Text">
+      <a name="text" val="Inputs"/>
+      <a name="font" val="SansSerif bold 20"/>
+    </comp>
+    <comp lib="0" loc="(660,640)" name="Tunnel">
+      <a name="label" val="Enable_PC"/>
+      <a name="labelfont" val="SansSerif bold 12"/>
+    </comp>
+    <comp lib="0" loc="(800,680)" name="Pin">
+      <a name="output" val="true"/>
+      <a name="label" val="Read_RAM"/>
+      <a name="labelloc" val="north"/>
+      <a name="labelfont" val="SansSerif bold 12"/>
+    </comp>
+    <comp lib="0" loc="(130,650)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="R/W Done"/>
+    </comp>
+    <comp lib="2" loc="(280,190)" name="Demultiplexer">
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="0" loc="(560,1260)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="Read RAM"/>
+    </comp>
+    <comp lib="6" loc="(1617,920)" name="Text">
+      <a name="text" val="End"/>
+      <a name="font" val="SansSerif bold 20"/>
+    </comp>
+    <comp lib="0" loc="(1170,1060)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="Reset"/>
     </comp>
   </circuit>
   <circuit name="Chronometer">
@@ -1011,16 +1011,19 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(310,150)" to="(320,150)"/>
     <wire from="(310,90)" to="(320,90)"/>
     <wire from="(320,120)" to="(320,150)"/>
-    <comp lib="0" loc="(320,200)" name="Tunnel">
-      <a name="facing" val="north"/>
-      <a name="label" val="Reset "/>
+    <comp lib="0" loc="(110,210)" name="Pin">
+      <a name="tristate" val="false"/>
     </comp>
-    <comp lib="3" loc="(380,110)" name="Comparator">
+    <comp lib="4" loc="(310,150)" name="Counter">
       <a name="width" val="4"/>
+      <a name="max" val="0xf"/>
     </comp>
     <comp lib="0" loc="(270,200)" name="Tunnel">
       <a name="facing" val="north"/>
       <a name="label" val="Clock"/>
+    </comp>
+    <comp lib="0" loc="(110,150)" name="Pin">
+      <a name="tristate" val="false"/>
     </comp>
     <comp lib="0" loc="(430,110)" name="Pin">
       <a name="facing" val="west"/>
@@ -1031,39 +1034,36 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <comp lib="0" loc="(160,150)" name="Tunnel">
       <a name="label" val="Reset "/>
     </comp>
+    <comp lib="0" loc="(160,210)" name="Tunnel">
+      <a name="label" val="Clock"/>
+    </comp>
     <comp lib="0" loc="(160,90)" name="Tunnel">
-      <a name="width" val="4"/>
-      <a name="label" val="Time "/>
-    </comp>
-    <comp lib="4" loc="(310,150)" name="Counter">
-      <a name="width" val="4"/>
-      <a name="max" val="0xf"/>
-    </comp>
-    <comp lib="6" loc="(138,45)" name="Text">
-      <a name="text" val="Inputs"/>
-      <a name="font" val="SansSerif bold 20"/>
-    </comp>
-    <comp lib="6" loc="(436,45)" name="Text">
-      <a name="text" val="Output"/>
-      <a name="font" val="SansSerif bold 20"/>
-    </comp>
-    <comp lib="0" loc="(310,90)" name="Tunnel">
-      <a name="facing" val="east"/>
       <a name="width" val="4"/>
       <a name="label" val="Time "/>
     </comp>
     <comp lib="0" loc="(110,90)" name="Pin">
       <a name="width" val="4"/>
     </comp>
-    <comp lib="0" loc="(110,210)" name="Pin">
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="0" loc="(160,210)" name="Tunnel">
-      <a name="label" val="Clock"/>
-    </comp>
-    <comp lib="0" loc="(110,150)" name="Pin">
-      <a name="tristate" val="false"/>
-    </comp>
     <comp lib="0" loc="(260,160)" name="Constant"/>
+    <comp lib="6" loc="(436,45)" name="Text">
+      <a name="text" val="Output"/>
+      <a name="font" val="SansSerif bold 20"/>
+    </comp>
+    <comp lib="3" loc="(380,110)" name="Comparator">
+      <a name="width" val="4"/>
+    </comp>
+    <comp lib="0" loc="(310,90)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="4"/>
+      <a name="label" val="Time "/>
+    </comp>
+    <comp lib="0" loc="(320,200)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="Reset "/>
+    </comp>
+    <comp lib="6" loc="(138,45)" name="Text">
+      <a name="text" val="Inputs"/>
+      <a name="font" val="SansSerif bold 20"/>
+    </comp>
   </circuit>
 </project>
